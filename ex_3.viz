@@ -1,0 +1,24 @@
+structure sMyFamily
+	name as string
+	age as Integer
+	
+end structure
+
+sub OnInit()
+
+    dim aMyFamily as Array[sMyFamily]
+	dim Mom as sMyFamily
+	dim Dad as sMyFamily
+	
+	Mom.name = "Marta"
+	Mom.age = 56
+	Dad.name = "Ernestino"
+	Dad.age = 60
+	
+	aMyFamily.push(Mom)
+	aMyFamily.push(Dad)
+	
+	println aMyFamily
+	
+	
+end sub
