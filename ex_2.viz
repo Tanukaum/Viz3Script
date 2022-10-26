@@ -1,0 +1,14 @@
+sub OnInit()
+
+    dim aMyArray as Array[Container]
+	this.GetContainerAndSubContainers(aMyArray,true)	
+    
+	for i = 0 to aMyArray.ubound
+	this.GetChildContainerByIndex(i).name = "MyGroup_" & cstr(i)
+	this.GetChildContainerByIndex(i).setchanged()
+	this.GetChildContainerByIndex(i).update()
+	println(aMyArray[i].Name)
+	
+	aMyArray[i].Scaling.x = 10
+	next
+end sub
