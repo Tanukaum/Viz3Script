@@ -1,0 +1,11 @@
+sub OnInit()
+
+	dim sString as String = "String Variavel"
+	dim fDouble as Double = 30.50
+	dim iInt as Integer = 50
+	
+	println sString
+	println fDouble
+	println iInt
+
+end sub
