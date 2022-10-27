@@ -1,0 +1,16 @@
+Sub OnInit()
+
+	dim cMyContainer As Container =  Scene.FindContainer("ex_4")
+
+	if cMyContainer.Geometry <> NULL Then
+		if cMyContainer.Alpha.Active == True then
+			cMyContainer.Alpha.Value = 30
+		else
+			println "Object does not have an Alpha"
+		end if
+	else
+		Println("Object does not have a geometry")
+
+	end if
+
+End Sub
